@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Face Detection Project | Aryan AI</title>
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<style>
+
+body{
+    background:#f5f7fa;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+.hero{
+    padding:50px 0;
+}
+
+
+video{
+    width:100%;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+
+.box{
+
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    margin-top:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+
+}
+
+
+.btn{
+
+    margin:10px;
+
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container hero">
+
+
+<h1 class="text-center mb-4">
+
+Face Detection and Recognition Project
+
+</h1>
+
+
+
+<video controls autoplay muted loop>
+
+<source src="face.mp4" type="video/mp4">
+
+</video>
+
+
+
+
+<div class="container hero">
+
+    <div class="box">
+
+        <h2>About Project</h2>
+
+        <p>
+            The <strong>AI Face Mesh & Hand Gesture Controlled Virtual Mask</strong> is an advanced Computer Vision project developed using
+            <strong>Python, OpenCV, MediaPipe, and NumPy</strong>. The system performs real-time face mesh detection and hand gesture tracking
+            through a webcam, creating an interactive AI experience.
+        </p>
+
+        <p>
+            The application detects over <strong>468 facial landmarks</strong> using MediaPipe Face Mesh while simultaneously tracking
+            hand movements. By measuring the distance between the thumb and index finger, users can dynamically resize a virtual
+            face mesh mask in real time without touching the computer.
+        </p>
+
+        <p>
+            This project demonstrates the practical implementation of Artificial Intelligence, Human-Computer Interaction (HCI),
+            Gesture Recognition, and Real-Time Computer Vision technologies for creating contactless and interactive applications.
+        </p>
+
+    </div>
+
+    <div class="box">
+
+        <h2>Project Features</h2>
+
+        <ul>
+            <li>Real-Time Face Mesh Detection (468 Facial Landmarks)</li>
+            <li>AI Powered Hand Gesture Recognition</li>
+            <li>Thumb & Index Finger Distance Measurement</li>
+            <li>Dynamic Virtual Face Mesh Scaling</li>
+            <li>Touch-Free Gesture Based Interaction</li>
+            <li>MediaPipe Face Mesh Integration</li>
+            <li>Real-Time Hand Skeleton Visualization</li>
+            <li>Live Webcam Processing</li>
+            <li>Fullscreen Display Support</li>
+            <li>High-Speed AI Processing with OpenCV</li>
+            <li>Low Latency Performance</li>
+            <li>Cross Platform Python Implementation</li>
+        </ul>
+
+    </div>
+
+    <div class="box">
+
+        <h2>How It Works</h2>
+
+        <p>
+            The webcam continuously captures live video frames which are processed using MediaPipe Face Mesh and Hands models.
+            Facial landmarks are extracted to determine the face position, while hand landmarks detect finger movements.
+            The distance between the thumb and index finger controls the scale of the virtual face mesh, allowing users
+            to enlarge or shrink the AI-generated mask naturally through gestures.
+        </p>
+
+    </div>
+
+    <div class="box">
+
+        <h2>Technologies Used</h2>
+
+        <ul>
+            <li>Python 3.x</li>
+            <li>OpenCV</li>
+            <li>MediaPipe Face Mesh</li>
+            <li>MediaPipe Hands</li>
+            <li>NumPy</li>
+            <li>Artificial Intelligence (AI)</li>
+            <li>Computer Vision</li>
+            <li>Machine Learning</li>
+            <li>Human Computer Interaction (HCI)</li>
+            <li>Real-Time Image Processing</li>
+        </ul>
+
+    </div>
+
+    <div class="box">
+
+        <h2>Applications</h2>
+
+        <ul>
+            <li>Augmented Reality (AR)</li>
+            <li>Virtual Face Filters</li>
+            <li>Gesture Controlled Applications</li>
+            <li>AI Based Interactive Systems</li>
+            <li>Educational AI Demonstrations</li>
+            <li>Smart Human-Computer Interaction</li>
+            <li>Entertainment & Gaming</li>
+            <li>Research in Computer Vision</li>
+        </ul>
+
+    </div>
+
+</div>
+
+
+<!-- DOWNLOAD BUTTON -->
+
+
+<div class="text-center mt-4">
+
+
+
+<button class="btn btn-success"
+onclick="checkLogin('source/maskk.py')">
+
+💻 Download Source Code
+
+</button>
+
+
+
+<button class="btn btn-danger"
+onclick="checkLogin('pdf/FaceDetection.pdf')">
+
+📄 Download PDF
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<div class="box">
+
+
+<h2>Developer</h2>
+
+
+<p>
+<strong>Name:</strong> Aryan Jain
+</p>
+
+
+<p>
+<strong>Role:</strong> AI Developer | Python Programmer | Computer Vision Enthusiast
+</p>
+
+
+<p>
+<strong>University:</strong> CCS University Meerut
+</p>
+
+
+</div>
+
+
+
+
+<div class="text-center mt-5">
+
+
+<a href="video.html" class="btn btn-primary">
+
+← Back To Projects
+
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script type="module" src="script.js"></script>
+
+
+</body>
+
+</html>

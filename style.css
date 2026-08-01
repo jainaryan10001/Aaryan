@@ -1,0 +1,121 @@
+/* =========================
+   Reset
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   Body
+========================= */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(0,0,0,0.4) !important;
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand{
+    font-size: 28px;
+    font-weight: bold;
+    color: white !important;
+}
+
+.nav-link{
+    color: white !important;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color: #00d4ff !important;
+}
+
+/* =========================
+   Video
+========================= */
+
+.video-fluid{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+/* =========================
+   Hero Text
+========================= */
+
+.hero{
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 20px;
+    color: #555;
+}
+
+/* =========================
+   Buttons
+========================= */
+
+.btn-custom{
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-custom:hover{
+    background: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width:768px){
+
+    .video-fluid{
+        height: 60vh;
+    }
+
+    .hero h1{
+        font-size: 35px;
+    }
+
+    .hero p{
+        font-size: 18px;
+    }
+
+    .navbar-brand{
+        font-size: 22px;
+    }
+
+}
