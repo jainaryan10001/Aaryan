@@ -2,326 +2,631 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Videos | Aryan AI</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Projects | Aryan AI</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="video.css">
+
 </head>
 
 <body>
-     <nav class="navbar navbar-expand-lg">
 
-        <div class="container">
+<!-- ================= NAVBAR ================= -->
 
-            <a class="navbar-brand" href="index.html">Aryan Jain</a>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
-            <button class="navbar-toggler bg-light" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav">
+<div class="container">
 
-                <span class="navbar-toggler-icon"></span>
+<a class="navbar-brand fw-bold" href="index.html">
+<i class="fa-solid fa-microchip"></i>
+Aryan AI
+</a>
 
-            </button>
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+<span class="navbar-toggler-icon"></span>
 
-                <ul class="navbar-nav ms-auto">
+</button>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
+<div class="collapse navbar-collapse"
+id="navbarNav">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="certificate.html">Certificate</a>
-                    </li>
+<ul class="navbar-nav ms-auto">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="video.html">Projects</a>
-                    </li>
+<li class="nav-item">
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="research.html">Research</a>
-                    </li>
+<a class="nav-link"
+href="index.html">
 
-                    <li class="nav-item dropdown">
+<i class="fa-solid fa-house"></i>
 
-    <a class="nav-link dropdown-toggle" href="#" role="button"
-       data-bs-toggle="dropdown" aria-expanded="false">
+Home
 
-        Contact
-
-    </a>
-
-    <ul class="dropdown-menu">
-
-        <li>
-            <a class="dropdown-item" href="mailto:jainaryan.10001@gmail.com">
-                📧 Email
-            </a>
-        </li>
-
-        <li>
-            <a class="dropdown-item" href="https://github.com/jainaryan10001" target="_blank">
-                🐙 GitHub
-            </a>
-        </li>
-
-        <li>
-            <a class="dropdown-item" href="https://www.linkedin.com/in/aryan-jain-b2976b351" target="_blank">
-                💼 LinkedIn
-            </a>
-        </li>
-
-        <li><hr class="dropdown-divider"></li>
-
-
-    </ul>
+</a>
 
 </li>
 
-                </ul>
+<li class="nav-item">
 
-               <span id="welcomeUser"
-      class="me-3 fw-bold text-primary">
-</span>
+<a class="nav-link active"
+href="video.html">
 
-<a href="login.html" id="loginBtn"
-   class="btn btn-primary ms-3">
-    Login
+<i class="fa-solid fa-video"></i>
+
+Projects
+
 </a>
 
-<button id="logoutBtn"
-        class="btn btn-danger ms-2"
-        style="display:none;">
-    Logout
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="certificate.html">
+
+<i class="fa-solid fa-award"></i>
+
+Certificates
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="research.html">
+
+<i class="fa-solid fa-lightbulb"></i>
+
+Research
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="contact.html">
+
+<i class="fa-solid fa-envelope"></i>
+
+Contact
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<video autoplay muted loop playsinline>
+
+<source src="background.mp4" type="video/mp4">
+
+</video>
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>
+
+My AI Projects
+
+</h1>
+
+<p>
+
+Artificial Intelligence • Computer Vision • Machine Learning • Python
+
+</p>
+
+<div class="hero-btns">
+
+<a href="#projects"
+class="btn btn-primary btn-lg">
+
+Explore Projects
+
+</a>
+
+<a href="index.html"
+class="btn btn-outline-light btn-lg">
+
+Back Home
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= COUNTER ================= -->
+
+<section class="counter-section">
+
+<div class="container">
+
+<div class="row text-center">
+
+<div class="col-lg-3 col-md-6">
+
+<div class="counter-box">
+
+<h2>15+</h2>
+
+<p>AI Projects</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="counter-box">
+
+<h2>12</h2>
+
+<p>Certificates</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="counter-box">
+
+<h2>100%</h2>
+
+<p>Responsive</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-3 col-md-6">
+
+<div class="counter-box">
+
+<h2>2026</h2>
+
+<p>Latest Work</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-section"
+id="projects">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-8 mx-auto">
+
+<input
+
+type="text"
+
+id="searchInput"
+
+class="form-control"
+
+placeholder="Search Your Project...">
+
+</div>
+
+</div>
+
+<div class="text-center mt-4">
+
+<button class="filter-btn active">
+
+All
+
 </button>
 
-            </div>
+<button class="filter-btn">
 
-        </div>
+AI
 
-    </nav>
+</button>
 
-<div class="container py-5">
+<button class="filter-btn">
 
-    <h1 class="text-center fw-bold mb-3"></h1>
-    <h1 class="text-center fw-bold mb-3">Project Videos</h1>
+YOLO
 
-    <p class="text-center text-muted mb-5">
-        Explore my Artificial Intelligence, Python, Computer Vision, and Automation projects through interactive demonstration videos.
-    </p>
+</button>
 
-    <div class="row g-4">
+<button class="filter-btn">
 
-       <!-- Video 1 -->
+Python
+
+</button>
+
+<button class="filter-btn">
+
+OpenCV
+
+</button>
+
+<button class="filter-btn">
+
+Web
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PROJECTS START ================= -->
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="row g-4">
+
+
+
+<!-- ================= PROJECT 2 ================= -->
 <div class="col-lg-4 col-md-6">
-    <div class="card shadow border-0 h-100">
-        <video class="card-img-top video-card" autoplay loop muted playsinline>
+    <div class="project-card">
+        <video class="project-video" autoplay muted loop playsinline preload="auto">
             <source src="face.mp4" type="video/mp4">
         </video>
-        <div class="card-body">
-            <h5 class="card-title">Real Time Face Detection</h5>
-            <p class="card-text">Real-time face detection using Python and OpenCV.</p>
-            <a href="face.html" class="btn btn-primary w-100">View Details</a>
+
+        <div class="project-body">
+            <h4>Real Time Face Detection</h4>
+            <p>Real-time face detection using Python and OpenCV.</p>
+
+            <div class="tags">
+                <span>AI</span>
+                <span>OpenCV</span>
+            </div>
+
+            <div class="mt-4 d-flex justify-content-between">
+                <a href="face.html" class="btn btn-primary">View Details</a>
+                <a href="https://github.com/jainaryan10001" target="_blank" class="btn btn-outline-light">GitHub</a>
+            </div>
         </div>
     </div>
 </div>
 
-<!-- Video 2 -->
+<!-- ================= PROJECT 3 ================= -->
 <div class="col-lg-4 col-md-6">
-    <div class="card shadow border-0 h-100">
-        <video class="card-img-top video-card" autoplay loop muted playsinline>
-            <source src="music.mp4" type="video/mp4">
-        </video>
-        <div class="card-body">
-            <h5 class="card-title">Air Music play</h5>
-            <p class="card-text">Using python and OpenCV for air music control.</p>
-            <a href="music.html" class="btn btn-primary w-100">View Details</a>
-        </div>
-    </div>
-</div>
-
-<!-- Video 3 -->
-<div class="col-lg-4 col-md-6">
-    <div class="card shadow border-0 h-100">
-        <video class="card-img-top video-card" autoplay loop muted playsinline>
-            <source src="ditection.mp4" type="video/mp4">
-        </video>
-        <div class="card-body">
-            <h5 class="card-title">Face Detection</h5>
-            <p class="card-text">using Python and OpenCV.</p>
-            <a href="direction.html" class="btn btn-primary w-100">View Details</a>
-        </div>
-    </div>
-</div>
-
-<!-- Video 4 -->
-<div class="col-lg-4 col-md-6">
-    <div class="card shadow border-0 h-100">
-        <video class="card-img-top video-card" autoplay loop muted playsinline>
-            <source src="car.mp4" type="video/mp4">
-        </video>
-        <div class="card-body">
-            <h5 class="card-title">Real Time Detection</h5>
-            <p class="card-text">Real-time object detection using Python, OpenCV and YOLO.</p>
-            <a href="car.html" class="btn btn-primary w-100">View Details</a>
-        </div>
-    </div>
-</div>
-
-<!-- Video 5 -->
-<div class="col-lg-4 col-md-6">
-    <div class="card shadow border-0 h-100">
-        <video class="card-img-top video-card" autoplay loop muted playsinline>
-            <source src="finger.mp4" type="video/mp4">
-        </video>
-        <div class="card-body">
-            <h5 class="card-title">Lock and Unlock Folder</h5>
-            <p class="card-text">Real-time hand gesture recognition for folder access control.</p>
-            <a href="finger.html" class="btn btn-primary w-100">View Details</a>
-        </div>
-    </div>
-</div>
-
-<!-- Video 6 -->
-<div class="col-lg-4 col-md-6">
-    <div class="card shadow border-0 h-100">
-        <video class="card-img-top video-card" autoplay loop muted playsinline>
-            <source src="volume.mp4" type="video/mp4">
-        </video>
-        <div class="card-body">
-            <h5 class="card-title">Hand Volume Control</h5>
-            <p class="card-text">Real-time hand volume control using Python and OpenC</p>
-            <a href="volume.html" class="btn btn-primary w-100">View Details</a>
-        </div>
-    </div>
-</div>
-
-<!-- Video 7 -->
-<div class="col-lg-4 col-md-6">
-    <div class="card shadow border-0 h-100">
-        <video class="card-img-top video-card" autoplay loop muted playsinline>
-            <source src="touch.mp4" type="video/mp4">
-        </video>
-        <div class="card-body">
-            <h5 class="card-title">Touchless Control</h5>
-            <p class="card-text">AI-powered touchless interaction system.</p>
-            <a href="touch.html" class="btn btn-primary w-100">View Details</a>
-        </div>
-    </div>
-</div>
-
-<!-- Video 8 -->
-<div class="col-lg-4 col-md-6">
-    <div class="card shadow border-0 h-100">
-        <video class="card-img-top video-card" autoplay loop muted playsinline>
-            <source src="football.mp4" type="video/mp4">
-        </video>
-        <div class="card-body">
-            <h5 class="card-title">Player Tracking</h5>
-            <p class="card-text"></p>
-            <a href="football.html" class="btn btn-primary w-100">View Details</a>
-        </div>
-    </div>
-</div>
-
-<!-- Video 9 -->
-<div class="col-lg-4 col-md-6">
-    <div class="card shadow border-0 h-100">
-        <video class="card-img-top video-card" autoplay loop muted playsinline>
+    <div class="project-card">
+        <video class="project-video" autoplay muted loop playsinline preload="auto">
             <source src="count.mp4" type="video/mp4">
         </video>
-        <div class="card-body">
-            <h5 class="card-title">Finger Counting</h5>
-            <p class="card-text"></p>
-            <a href="count.html" class="btn btn-primary w-100">View Details</a>
+
+        <div class="project-body">
+            <h4>Finger Counting</h4>
+            <p>Real-time finger counting using MediaPipe.</p>
+
+            <div class="tags">
+                <span>MediaPipe</span>
+                <span>Python</span>
+            </div>
+
+            <div class="mt-4 d-flex justify-content-between">
+                <a href="count.html" class="btn btn-primary">View Details</a>
+                <a href="https://github.com/jainaryan10001" target="_blank" class="btn btn-outline-light">GitHub</a>
+            </div>
         </div>
     </div>
 </div>
+<!-- ================= PROJECT 4 ================= -->
+<div class="col-lg-4 col-md-6">
+    <div class="project-card">
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-<script type="module" src="auth-status.js"></script>
+        <video class="project-video" autoplay muted loop playsinline preload="auto">
+            <source src="touch.mp4" type="video/mp4">
+        </video>
 
-<!-- Fosoter Start -->
-<footer class="bg-dark text-light pt-5 pb-3 mt-5">
+        <div class="project-body">
 
-    <div class="container">
+            <h4>Touchless Control</h4>
 
-        <div class="row">
+            <p>AI-powered touchless interaction system.</p>
 
-            <!-- About -->
-            <div class="col-lg-4 col-md-6 mb-4">
-
-                <h4 class="fw-bold text-info">Aryan Jain</h4>
-
-                <p>
-                    AI Developer | Python Programmer | Computer Vision Enthusiast.
-                    Building intelligent projects using AI, OpenCV, YOLO, and Deep Learning.
-                </p>
-
+            <div class="tags">
+                <span>OpenCV</span>
+                <span>Gesture</span>
+                <span>AI</span>
             </div>
 
-            <!-- Quick Links -->
-            <div class="col-lg-4 col-md-6 mb-4">
+            <div class="mt-4 d-flex justify-content-between">
 
-                <h5 class="fw-bold">Quick Links</h5>
+                <a href="touch.html" class="btn btn-primary">
+                    View Details
+                </a>
 
-                <ul class="list-unstyled">
-
-                    <li><a href="index.html" class="footer-link">Home</a></li>
-
-                    <li><a href="certificate.html" class="footer-link">Certificates</a></li>
-
-                    <li><a href="video.html" class="footer-link">Projects</a></li>
-
-                    <li><a href="research.html" class="footer-link">Vision</a></li>
-
-                </ul>
+                 
 
             </div>
-
-            <!-- Contact -->
-            <div class="col-lg-4 col-md-12 mb-4">
-
-                <h5 class="fw-bold">Contact</h5>
-
-                <p>📧 jainaryan.10001@gmail.com</p>
-
-                <p>
-                    <a href="https://github.com/jainaryan10001"
-                       target="_blank"
-                       class="footer-link">
-                        GitHub
-                    </a>
-                </p>
-
-                <p>
-                    <a href="https://www.linkedin.com/in/aryan-jain-b2976b351"
-                       target="_blank"
-                       class="footer-link">
-                        LinkedIn
-                    </a>
-                </p>
-
-            </div>
-
-        </div>
-
-        <hr class="border-secondary">
-
-        <div class="text-center">
-
-            <p class="mb-0">
-                © 2026 <strong>Aryan Jain</strong>. All Rights Reserved.
-            </p>
 
         </div>
 
     </div>
+</div>
+
+<!-- ================= PROJECT 5 ================= -->
+
+<div class="col-lg-4 col-md-6">
+    <div class="project-card">
+
+        <video class="project-video" autoplay muted loop playsinline preload="auto">
+            <source src="car.mp4" type="video/mp4">
+        </video>
+
+        <div class="project-body">
+
+            <h4>Real Time Object Detection</h4>
+
+            <p>Real-time object detection using Python, OpenCV and YOLO.</p>
+
+            <div class="tags">
+                <span>YOLOv8</span>
+                <span>Python</span>
+                <span>OpenCV</span>
+            </div>
+
+            <div class="mt-4 d-flex justify-content-between">
+
+                <a href="car.html" class="btn btn-primary">
+                    View Details
+                </a>
+
+                 
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= PROJECT 6 ================= -->
+
+<div class="col-lg-4 col-md-6">
+    <div class="project-card">
+
+        <video class="project-video" autoplay muted loop playsinline preload="auto">
+            <source src="volume.mp4" type="video/mp4">
+        </video>
+
+        <div class="project-body">
+
+            <h4>Hand Volume Control</h4>
+
+            <p>Real-time hand volume control using Python and OpenCV.</p>
+
+            <div class="tags">
+                <span>MediaPipe</span>
+                <span>Python</span>
+                <span>AI</span>
+            </div>
+
+            <div class="mt-4 d-flex justify-content-between">
+
+                <a href="volume.html" class="btn btn-primary">
+                    View Details
+                </a>
+
+                 
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- ================= PROJECT 7 ================= -->
+
+<div class="col-lg-4 col-md-6">
+    <div class="project-card">
+
+        <video class="project-video" autoplay muted loop playsinline preload="auto">
+            <source src="finger.mp4" type="video/mp4">
+        </video>
+
+        <div class="project-body">
+
+            <h4>AI Gesture Lock</h4>
+
+            <p>Real-time hand gesture recognition for folder access control.</p>
+
+            <div class="tags">
+                <span>Security</span>
+                <span>Gesture</span>
+                <span>Python</span>
+            </div>
+
+            <div class="mt-4 d-flex justify-content-between">
+                <a href="finger.html" class="btn btn-primary">
+                    View Details
+                </a>
+
+                 
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= PROJECT 8 ================= -->
+
+<div class="col-lg-4 col-md-6">
+    <div class="project-card">
+
+        <video class="project-video" autoplay muted loop playsinline preload="auto">
+            <source src="football.mp4" type="video/mp4">
+        </video>
+
+        <div class="project-body">
+
+            <h4>Player Tracking</h4>
+
+            <p>Real-time football player detection and tracking using YOLO.</p>
+
+            <div class="tags">
+                <span>YOLO</span>
+                <span>Computer Vision</span>
+                <span>Python</span>
+            </div>
+
+            <div class="mt-4 d-flex justify-content-between">
+                <a href="football.html" class="btn btn-primary">
+                    View Details
+                </a>
+
+                 
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= PROJECT 9 ================= -->
+
+<div class="col-lg-4 col-md-6">
+    <div class="project-card">
+
+        <video class="project-video" autoplay muted loop playsinline preload="auto">
+            <source src="music.mp4" type="video/mp4">
+        </video>
+
+        <div class="project-body">
+
+            <h4>Air Music Play</h4>
+
+            <p>Control music playback using hand gestures with Python and OpenCV.</p>
+
+            <div class="tags">
+                <span>MediaPipe</span>
+                <span>Python</span>
+                <span>OpenCV</span>
+            </div>
+
+            <div class="mt-4 d-flex justify-content-between">
+                <a href="music.html" class="btn btn-primary">
+                    View Details
+                </a>
+
+                 
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!-- ================= PROJECT 10 ================= -->
+
+<div class="col-lg-4 col-md-6">
+    <div class="project-card">
+
+        <video class="project-video" autoplay muted loop playsinline preload="auto">
+            <source src="ditection.mp4" type="video/mp4">
+        </video>
+
+        <div class="project-body">
+
+            <h4>Face Detection</h4>
+
+            <p>Real-time face detection using Python and OpenCV.</p>
+
+            <div class="tags">
+                <span>OpenCV</span>
+                <span>Python</span>
+                <span>AI</span>
+            </div>
+
+            <div class="mt-4 d-flex justify-content-between">
+                <a href="direction.html" class="btn btn-primary">
+                    View Details
+                </a>
+
+                 
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+
+<div class="container text-center">
+
+<h3>Aryan AI</h3>
+
+<p>
+Building Intelligent AI Solutions with Python, Computer Vision & Machine Learning.
+</p>
+
+<p>
+© 2026 Aryan Jain | All Rights Reserved
+</p>
+
+</div>
 
 </footer>
+
+<!-- Back To Top -->
+
+<button id="topBtn">
+<i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="video.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
