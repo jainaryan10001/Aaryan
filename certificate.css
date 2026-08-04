@@ -1,0 +1,406 @@
+/* =========================
+   Google Font
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#07152f,#0d2348,#143b74);
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar{
+    background:rgba(10,20,50,.75);
+    backdrop-filter:blur(15px);
+    box-shadow:0 8px 30px rgba(0,0,0,.35);
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:700;
+}
+
+.nav-link{
+    color:#fff !important;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#4dc3ff !important;
+}
+
+/* =========================
+   Hero
+========================= */
+
+.hero{
+    padding:140px 0 90px;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:800;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#d8e6ff;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.hero-buttons{
+    margin-top:35px;
+}
+
+.hero-buttons .btn{
+    margin-right:15px;
+    border-radius:40px;
+    padding:12px 30px;
+}
+
+.hero-icon{
+    width:250px;
+    height:250px;
+    margin:auto;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:90px;
+    color:#4dc3ff;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    box-shadow:0 0 40px rgba(0,170,255,.35);
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-18px);}
+100%{transform:translateY(0);}
+
+}
+
+/* =========================
+ Counter
+========================= */
+
+.counter-section{
+    padding:50px 0;
+}
+
+.counter-box{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:20px;
+    padding:30px;
+    transition:.4s;
+}
+
+.counter-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px rgba(0,180,255,.35);
+}
+
+.counter-box h2{
+    font-size:42px;
+    color:#4dc3ff;
+    font-weight:700;
+}
+
+.counter-box p{
+    margin-top:10px;
+}
+
+/* =========================
+ Search
+========================= */
+
+.search-section{
+    padding:70px 0;
+}
+
+.search-box input{
+    border:none;
+    border-radius:50px;
+    padding:15px 25px;
+    font-size:17px;
+}
+
+.filter-btn{
+    border:none;
+    padding:10px 25px;
+    margin:8px;
+    border-radius:30px;
+    background:#173c72;
+    color:#fff;
+    transition:.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active{
+    background:#00a8ff;
+}
+
+/* =========================
+ Cards
+========================= */
+
+.certificate-card{
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(20px);
+    border-radius:25px;
+    overflow:hidden;
+    transition:.4s;
+    border:1px solid rgba(255,255,255,.12);
+    position:relative;
+
+}
+
+.certificate-card:hover{
+
+    transform:translateY(-12px) scale(1.02);
+
+    box-shadow:0 15px 40px rgba(0,170,255,.35);
+
+}
+
+.certificate-card img{
+
+    width:100%;
+    height:240px;
+    object-fit:cover;
+
+}
+
+.card-body{
+
+    padding:25px;
+
+}
+
+.card-body h4{
+
+    margin-bottom:10px;
+
+}
+
+.card-body p{
+
+    color:#d7e6ff;
+
+}
+
+.tags{
+
+    margin-top:18px;
+
+}
+
+.tags span{
+
+    display:inline-block;
+
+    background:#00a8ff;
+
+    color:#fff;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    margin:4px;
+
+    font-size:13px;
+
+}
+
+.verified{
+
+    position:absolute;
+
+    top:15px;
+
+    right:15px;
+
+    font-size:13px;
+
+}
+
+/* =========================
+ Buttons
+========================= */
+
+.btn-primary{
+
+    background:#00a8ff;
+    border:none;
+
+}
+
+.btn-primary:hover{
+
+    background:#0085d1;
+
+}
+
+.btn-outline-light:hover{
+
+    color:#000;
+
+}
+
+/* =========================
+ Footer
+========================= */
+
+.footer{
+
+    padding:60px 0;
+    background:#051227;
+    margin-top:60px;
+
+}
+
+.footer h4{
+
+    color:#4dc3ff;
+
+}
+
+/* =========================
+ Top Button
+========================= */
+
+#topBtn{
+
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#00a8ff;
+    color:#fff;
+    display:none;
+    cursor:pointer;
+    font-size:20px;
+    box-shadow:0 10px 30px rgba(0,170,255,.4);
+
+}
+
+#topBtn:hover{
+
+    transform:scale(1.1);
+
+}
+
+/* =========================
+ Responsive
+========================= */
+
+@media(max-width:991px){
+
+.hero{
+
+padding-top:120px;
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero-icon{
+
+width:180px;
+height:180px;
+font-size:65px;
+margin-top:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero-buttons .btn{
+
+display:block;
+width:100%;
+margin:10px 0;
+
+}
+
+.counter-box{
+
+margin-bottom:20px;
+
+}
+
+}
+.certificate-card{
+    background: #1b1b2f;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 100%;
+    transition: .4s;
+}
+
+.certificate-card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body{
+    padding:20px;
+}
+
+.certificate-card{
+    background:#1b1b2f;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.4s;
+    height:100%;
+}
+
+.certificate-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:20px;
+}
