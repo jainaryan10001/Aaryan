@@ -363,3 +363,168 @@ function checkLogin(file){
 // Make function available for HTML button
 
 window.checkLogin = checkLogin;
+
+// =========================
+// SHOW / HIDE PASSWORD
+// =========================
+
+const togglePassword = document.getElementById("togglePassword");
+
+if (togglePassword) {
+
+    togglePassword.addEventListener("click", () => {
+
+        const password = document.getElementById("password");
+        const icon = togglePassword.querySelector("i");
+
+        if (password.type === "password") {
+
+            password.type = "text";
+            icon.classList.remove("fa-eye");
+            icon.classList.add("fa-eye-slash");
+
+        } else {
+
+            password.type = "password";
+            icon.classList.remove("fa-eye-slash");
+            icon.classList.add("fa-eye");
+
+        }
+
+    });
+
+}
+
+
+
+// =========================
+// BUTTON LOADING EFFECT
+// =========================
+
+if (loginForm) {
+
+    loginForm.addEventListener("submit", () => {
+
+        const btn = document.querySelector(".btn-login");
+
+        btn.innerHTML =
+        '<i class="fa-solid fa-spinner fa-spin"></i> Signing In...';
+
+        btn.disabled = true;
+
+    });
+
+}
+
+
+
+// =========================
+// ENTER KEY LOGIN
+// =========================
+
+document.addEventListener("keypress", function(e){
+
+    if(e.key === "Enter"){
+
+        const form = document.getElementById("loginForm");
+
+        if(form){
+
+            form.requestSubmit();
+
+        }
+
+    }
+
+});
+
+
+
+// =========================
+// INPUT ANIMATION
+// =========================
+
+document.querySelectorAll(".form-control").forEach(input=>{
+
+    input.addEventListener("focus",()=>{
+
+        input.parentElement.style.transform="scale(1.02)";
+
+    });
+
+    input.addEventListener("blur",()=>{
+
+        input.parentElement.style.transform="scale(1)";
+
+    });
+
+});
+
+
+
+// =========================
+// FADE IN LOGIN CARD
+// =========================
+
+window.addEventListener("load",()=>{
+
+    const card=document.querySelector(".login-card");
+
+    if(card){
+
+        card.style.opacity="0";
+        card.style.transform="translateY(40px)";
+
+        setTimeout(()=>{
+
+            card.style.transition=".8s";
+            card.style.opacity="1";
+            card.style.transform="translateY(0)";
+
+        },200);
+
+    }
+
+});
+
+
+
+// =========================
+// REMEMBER EMAIL
+// =========================
+
+const remember=document.getElementById("remember");
+
+if(remember){
+
+    const email=document.getElementById("email");
+
+    email.value=localStorage.getItem("savedEmail") || "";
+
+    remember.checked=email.value!=="";
+
+    remember.addEventListener("change",()=>{
+
+        if(remember.checked){
+
+            localStorage.setItem("savedEmail",email.value);
+
+        }else{
+
+            localStorage.removeItem("savedEmail");
+
+        }
+
+    });
+
+    email.addEventListener("keyup",()=>{
+
+        if(remember.checked){
+
+            localStorage.setItem("savedEmail",email.value);
+
+        }
+
+    });
+
+}
