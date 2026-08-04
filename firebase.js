@@ -10,6 +10,7 @@ import {
   signOut
 } from "https://www.gstatic.com/firebasejs/12.1.0/firebase-auth.js";
 
+// Firebase Configuration
 const firebaseConfig = {
   apiKey: "AIzaSyC-ZCZQo4jkcRVKh7Ok511ZZkL3SK7nuwY",
   authDomain: "aryan-ai-8280a.firebaseapp.com",
@@ -20,14 +21,24 @@ const firebaseConfig = {
   measurementId: "G-8FEBBTHZWN"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
+// Initialize Authentication
 export const auth = getAuth(app);
+
+// Google Provider
 export const provider = new GoogleAuthProvider();
 
+// Force Google Account Selection
+provider.setCustomParameters({
+  prompt: "select_account"
+});
+
+// Export Firebase Authentication Functions
 export {
-    signInWithPopup,
-    createUserWithEmailAndPassword,
-    signInWithEmailAndPassword,
-    signOut
+  signInWithPopup,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut
 };
