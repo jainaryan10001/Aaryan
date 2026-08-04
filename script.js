@@ -526,5 +526,148 @@ if(remember){
         }
 
     });
+    / =========================
+// LOGIN REQUIRED DOWNLOAD
+// =========================
+
+
+function checkLogin(file){
+
+
+
+    onAuthStateChanged(auth,(user)=>{
+
+
+        if(user){
+
+
+            // Download file
+
+            window.location.href=file;
+
+
+        }
+        else{
+
+
+            alert("Please Login First");
+
+
+            window.location.href="login.html";
+
+
+        }
+
+
+
+    });
+
+
 
 }
+
+
+
+// Make function available for HTML button
+
+window.checkLogin = checkLogin;
+
+// =========================
+// SHOW / HIDE PASSWORD
+// =========================
+
+const togglePassword = document.getElementById("togglePassword");
+
+if (togglePassword) {
+
+    togglePassword.addEventListener("click", () => {
+
+        const password = document.getElementById("password");
+        const icon = togglePassword.querySelector("i");
+
+        if (password.type === "password") {
+
+            password.type = "text";
+            icon.classList.remove("fa-eye");
+            icon.classList.add("fa-eye-slash");
+
+        } else {
+
+            password.type = "password";
+            icon.classList.remove("fa-eye-slash");
+            icon.classList.add("fa-eye");
+
+        }
+
+    });
+
+}
+
+
+
+// =========================
+// BUTTON LOADING EFFECT
+// =========================
+
+if (loginForm) {
+
+    loginForm.addEventListener("submit", () => {
+
+        const btn = document.querySelector(".btn-login");
+
+        btn.innerHTML =
+        '<i class="fa-solid fa-spinner fa-spin"></i> Signing In...';
+
+        btn.disabled = true;
+
+    });
+
+}
+
+
+
+// =========================
+// ENTER KEY LOGIN
+// =========================
+
+document.addEventListener("keypress", function(e){
+
+    if(e.key === "Enter"){
+
+        const form = document.getElementById("loginForm");
+
+        if(form){
+
+            form.requestSubmit();
+
+        }
+
+    }
+
+});
+
+
+
+// =========================
+// INPUT ANIMATION
+// =========================
+
+document.querySelectorAll(".form-control").forEach(input=>{
+
+    input.addEventListener("focus",()=>{
+
+        input.parentElement.style.transform="scale(1.02)";
+
+    });
+
+    input.addEventListener("blur",()=>{
+
+        input.parentElement.style.transform="scale(1)";
+
+    });
+
+});
+
+
+}
+
