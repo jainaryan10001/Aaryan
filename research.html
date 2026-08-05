@@ -7,264 +7,164 @@
 <title>Research Lab | Aryan AI Solutions</title>
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Segoe UI,sans-serif;
-}
-
-body{
-
-background:
-linear-gradient(135deg,#050816,#0b1120,#16213e);
-
-color:white;
-
-}
-
-.hero{
-
-padding:120px 20px;
-text-align:center;
-
-}
-
-.hero h1{
-
-font-size:60px;
-font-weight:bold;
-
-background:linear-gradient(90deg,#00d4ff,#7b61ff);
-
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
-
-}
-
-.hero p{
-
-max-width:900px;
-margin:auto;
-font-size:20px;
-margin-top:25px;
-color:#d9d9d9;
-
-}
-
-.section-title{
-
-text-align:center;
-font-size:40px;
-margin-top:80px;
-margin-bottom:40px;
-font-weight:bold;
-
-}
-
-.card-box{
-
-background:rgba(255,255,255,.08);
-
-backdrop-filter:blur(18px);
-
-border:1px solid rgba(255,255,255,.1);
-
-border-radius:20px;
-
-padding:30px;
-
-height:100%;
-
-transition:.4s;
-
-}
-
-.card-box:hover{
-
-transform:translateY(-10px);
-
-box-shadow:0 20px 40px rgba(0,212,255,.25);
-
-}
-
-.card-box h3{
-
-color:#00d4ff;
-
-margin-bottom:20px;
-
-}
-
-.timeline{
-
-border-left:4px solid #00d4ff;
-
-padding-left:30px;
-
-margin:50px auto;
-
-max-width:900px;
-
-}
-
-.timeline-item{
-
-margin-bottom:40px;
-
-}
-
-.timeline-item h4{
-
-color:#00d4ff;
-
-}
-
-.quote{
-
-margin:90px auto;
-
-max-width:900px;
-
-padding:50px;
-
-border-radius:20px;
-
-background:rgba(255,255,255,.05);
-
-font-size:26px;
-
-text-align:center;
-
-font-style:italic;
-
-}
-
-.footer{
-
-padding:70px;
-
-text-align:center;
-
-}
-
-.btn-custom{
-
-background:#00d4ff;
-
-color:white;
-
-padding:14px 35px;
-
-border-radius:40px;
-
-font-size:18px;
-
-text-decoration:none;
-
-}
-
-.btn-custom:hover{
-
-background:#00a6cc;
-
-color:white;
-
-}
-
-</style>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="research.css">
 
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+  <!-- ================= NAVBAR ================= -->
 
-    <div class="container">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
-        <a class="navbar-brand fw-bold text-white" href="index.html">
-            Aryan Jain
-        </a>
+<div class="container">
 
-        <button class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav">
+<a class="navbar-brand fw-bold" href="index.html">
+<i class="fa-solid fa-microchip"></i>
+Aryan AI
+</a>
 
-            <span class="navbar-toggler-icon"></span>
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarNav">
 
-        </button>
+<span class="navbar-toggler-icon"></span>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+</button>
 
-            <ul class="navbar-nav ms-auto">
+<div class="collapse navbar-collapse"
+id="navbarNav">
 
-                <li class="nav-item">
-                    <a class="nav-link active text-white" href="index.html">Home</a>
-                </li>
+<ul class="navbar-nav ms-auto">
+    
 
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="certificate.html">Certificate</a>
-                </li>
+<li class="nav-item">
 
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="video.html">Projects</a>
-                </li>
+<a class="nav-link"
+href="index.html">
 
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="research.html">Vision</a>
-                </li>
+<i class="fa-solid fa-house"></i>
 
-                <li class="nav-item dropdown">
+Home
 
-                    <a class="nav-link dropdown-toggle text-white"
-                       href="#"
-                       role="button"
-                       data-bs-toggle="dropdown">
+</a>
 
-                        Contact
+</li>
 
-                    </a>
+<li class="nav-item">
 
-                    <ul class="dropdown-menu">
+<a class="nav-link active"
+href="video.html">
 
-                        <li>
-                            <a class="dropdown-item" href="mailto:jainaryan.10001@gmail.com">📧 Email</a>
-                        </li>
+<i class="fa-solid fa-video"></i>
 
-                        <li>
-                            <a class="dropdown-item" href="https://github.com/jainaryan10001" target="_blank">🐙 GitHub</a>
-                        </li>
+Projects
 
-                        <li>
-                            <a class="dropdown-item" href="https://www.linkedin.com/in/aryan-jain-b2976b351" target="_blank">💼 LinkedIn</a>
-                        </li>
+</a>
 
-                    </ul>
+</li>
 
-                </li>
+<li class="nav-item">
 
-            </ul>
+<a class="nav-link"
+href="certificate.html">
 
-            <span id="welcomeUser" class="me-3 fw-bold text-info"></span>
+<i class="fa-solid fa-award"></i>
 
-            <a href="login.html" id="loginBtn" class="btn btn-primary ms-3">
+Certificates
+
+</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link"
+href="research.html">
+
+<i class="fa-solid fa-lightbulb"></i>
+
+Research
+
+</a>
+
+</li>
+
+ <!-- Contact -->
+<li class="nav-item dropdown">
+
+    <a class="nav-link dropdown-toggle"
+       href="#"
+       role="button"
+       data-bs-toggle="dropdown">
+
+        <i class="fa-solid fa-envelope"></i>
+        Contact
+
+    </a>
+
+    <ul class="dropdown-menu">
+
+        <li>
+            <a class="dropdown-item" href="mailto:jainaryan.10001@gmail.com">
+                📧 Email
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" href="https://github.com/jainaryan10001" target="_blank">
+                🐙 GitHub
+            </a>
+        </li>
+
+        <li>
+            <a class="dropdown-item" href="https://www.linkedin.com/in/aryan-jain-b2976b351" target="_blank">
+                💼 LinkedIn
+            </a>
+        </li>
+
+    </ul>
+
+</li>
+
+<!-- User Menu -->
+<li class="nav-item dropdown ms-lg-2">
+
+    <a class="nav-link dropdown-toggle"
+       href="#"
+       id="userDropdown"
+       role="button"
+       data-bs-toggle="dropdown">
+
+        <i class="fa-solid fa-user"></i>
+        <span id="welcomeUser">Login</span>
+
+    </a>
+
+    <ul class="dropdown-menu dropdown-menu-end">
+
+        <li>
+            <a class="dropdown-item" href="login.html" id="loginBtn">
+                <i class="fa-solid fa-right-to-bracket"></i>
                 Login
             </a>
+        </li>
 
-            <button id="logoutBtn"
-                    class="btn btn-danger ms-2"
+        <li>
+            <button class="dropdown-item text-danger"
+                    id="logoutBtn"
                     style="display:none;">
+                <i class="fa-solid fa-right-from-bracket"></i>
                 Logout
             </button>
+        </li>
 
-        </div>
+    </ul>
 
-    </div>
-
+</li>
 </nav>
 
 <section class="hero">
@@ -563,6 +463,7 @@ Contact Me
 <!-- Footer End -->
  
 
+<script type="module" src="auth-status.js"></script>
 
 </body>
 </html>

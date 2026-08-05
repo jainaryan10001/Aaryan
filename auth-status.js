@@ -73,3 +73,26 @@ logoutBtn.onclick = async ()=>{
 }
 
 }
+// =========================
+// PDF Download Protection
+// =========================
+
+document.querySelectorAll(".pdf-download").forEach(btn => {
+
+    btn.addEventListener("click", (e) => {
+
+        const user = auth.currentUser;
+
+        if (!user) {
+
+            e.preventDefault();
+
+            alert("Please login first to download the PDF.");
+
+            window.location.href = "login.html";
+
+        }
+
+    });
+
+});

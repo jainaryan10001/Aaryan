@@ -9,109 +9,164 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= Navbar ================= -->
-       
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 
-    <nav class="navbar navbar-expand-lg">
+    <div class="container">
 
-        <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+            <i class="fa-solid fa-microchip"></i>
+            Aryan AI
+        </a>
 
-            <a class="navbar-brand" href="index.html">Aryan Jain</a>
-
-            <button class="navbar-toggler bg-light" type="button"
+        <button class="navbar-toggler"
+                type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNav">
 
-                <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
 
-            </button>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav">
 
-                <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto">
 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Home</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        <i class="fa-solid fa-house"></i>
+                        Home
+                    </a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="certificate.html">Certificate</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="video.html">
+                        <i class="fa-solid fa-video"></i>
+                        Projects
+                    </a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="video.html">Projects</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="certificate.html">
+                        <i class="fa-solid fa-award"></i>
+                        Certificates
+                    </a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="research.html">Vision</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="research.html">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        Research
+                    </a>
+                </li>
 
-                    <li class="nav-item dropdown">
+                <!-- Contact -->
+                <li class="nav-item dropdown">
 
-    <a class="nav-link dropdown-toggle" href="#" role="button"
-       data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       role="button"
+                       data-bs-toggle="dropdown">
 
-        Contact
+                        <i class="fa-solid fa-envelope"></i>
+                        Contact
 
-    </a>
+                    </a>
 
-    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu">
 
-         
+                        <li>
+                            <a class="dropdown-item" href="mailto:jainaryan.10001@gmail.com">
+                                📧 Email
+                            </a>
+                        </li>
 
-        <li>
-            <a class="dropdown-item" href="mailto:jainaryan.10001@gmail.com">
-                📧 Email
-            </a>
-        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="https://github.com/jainaryan10001"
+                               target="_blank">
+                                🐙 GitHub
+                            </a>
+                        </li>
 
-        <li>
-            <a class="dropdown-item" href="https://github.com/jainaryan10001" target="_blank">
-                🐙 GitHub
-            </a>
-        </li>
+                        <li>
+                            <a class="dropdown-item"
+                               href="https://www.linkedin.com/in/aryan-jain-b2976b351"
+                               target="_blank">
+                                💼 LinkedIn
+                            </a>
+                        </li>
 
-        <li>
-            <a class="dropdown-item" href="https://www.linkedin.com/in/aryan-jain-b2976b351" target="_blank">
-                💼 LinkedIn
-            </a>
-        </li>
+                    </ul>
 
-        <li><hr class="dropdown-divider"></li>
+                </li>
 
-        
+                <!-- User -->
+                <li class="nav-item dropdown ms-lg-2">
 
-    </ul>
+                    <a class="nav-link dropdown-toggle"
+                       href="#"
+                       id="userDropdown"
+                       role="button"
+                       data-bs-toggle="dropdown">
 
-</li>
+                        <i class="fa-solid fa-user"></i>
 
-                </ul>
-                <span id="welcomeUser"
-      class="me-3 fw-bold text-primary">
-</span>
+                        <span id="welcomeUser">
+                            Login
+                        </span>
 
-                <a href="login.html" id="loginBtn" class="btn btn-primary ms-3">
-    Login
-</a>
+                    </a>
 
-<button id="logoutBtn"
-        class="btn btn-danger ms-2"
-        style="display:none;">
-    Logout
-</button>
+                    <ul class="dropdown-menu dropdown-menu-end">
 
-            </div>
+                        <li>
+
+                            <a class="dropdown-item"
+                               href="login.html"
+                               id="loginBtn">
+
+                                <i class="fa-solid fa-right-to-bracket"></i>
+
+                                Login
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <button
+                                class="dropdown-item text-danger"
+                                id="logoutBtn"
+                                style="display:none;">
+
+                                <i class="fa-solid fa-right-from-bracket"></i>
+
+                                Logout
+
+                            </button>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
 
         </div>
 
-    </nav>
+    </div>
+
+</nav>
 
     <!-- ================= Video ================= -->
 
